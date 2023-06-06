@@ -1,0 +1,669 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+  height: 100%;
+}
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* About layout */
+body {
+  color: white;
+  font-family: "Epilogue", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+.bigcontainer,
+.navbar,
+.submaincon1,
+.skills,
+.skills2,
+.subcondetails,
+.detailcon,
+.socialmedia,
+.subcon,
+.skills,
+.skills li {
+  display: flex;
+}
+.bigcontainer {
+  margin: 0;
+  justify-content: center;
+}
+
+.backgroundvid {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  z-index: -1; /*to bring this element to the back*/
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .backgroundvid {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .backgroundvid {
+    width: auto;
+    height: 100%;
+  }
+}
+
+.navbar,
+.skills,
+.skills2 {
+  list-style-type: none;
+  padding: 0;
+}
+.navbaritem {
+  margin: auto;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+.navbaritem:hover {
+  color: #9b9b9b;
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.2s ease-in;
+}
+
+.navbarcontainer {
+  background-color: #2a2a2b;
+  padding: 15px;
+  width: 400px;
+  float: right;
+  border-radius: 0 25px 0 25px;
+  border: 1px solid #383838;
+}
+.maincontainer {
+  width: 60%;
+  height: 60%;
+}
+
+.orangeline,
+.orangeline1 {
+  background-color: #ffcd29;
+  border: none;
+  height: 5px;
+  width: 40px;
+  border-radius: 50px;
+  margin: 5px 0 15px 0;
+}
+.orangeline1 {
+  display: none;
+}
+
+.innermaincontainer {
+  margin: 25px 25px 50px 25px;
+}
+
+.subcon,
+.maincontainer,
+.maincontainer1,
+.maincontainer2 {
+  background-color: #1e1e1f;
+  border-radius: 25px;
+  border: 1px solid #383838;
+  margin: 100px 0 250px 25px;
+}
+
+.subcon {
+  position: sticky;
+  top: 0;
+}
+.subcon {
+  width: 18rem;
+  max-height: 44rem;
+}
+
+.content2,
+.submaincon1 {
+  margin-top: 20px;
+}
+
+.contenttitle {
+  margin-top: 25px;
+  font-weight: 600;
+  font-size: 1.4em;
+}
+
+.maintitle {
+  font-weight: 600;
+  font-size: 2em;
+}
+
+.content,
+.detail2 {
+  color: #d0cdd0;
+}
+.name {
+  font-weight: 500;
+  font-size: 1.4em;
+  margin-bottom: 15px;
+}
+
+.jobtitle {
+  text-align: center;
+  background-color: #2a2a2b;
+  border-radius: 10px;
+  font-weight: 300;
+  width: 55%;
+  padding: 5px 0px;
+  font-size: 0.9em;
+  margin: auto;
+}
+
+.content,
+.detail2,
+.detail3 {
+  font-size: 0.9em;
+}
+
+.detail2 {
+  margin-top: 10px;
+}
+
+.detailcon {
+  width: 80%;
+  margin: 5px;
+}
+.subcondetails {
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.submaincon1 {
+  border: 2px solid transparent;
+  border-radius: 25px;
+  background-image: linear-gradient(#1e1e1f, #1e1e1f),
+    linear-gradient(to bottom right, #3f3f3f, #202021, #202021);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.icon1 {
+  margin: 20px;
+}
+
+.fa-laptop-code,
+.devicon,
+.icon,
+.selected,
+.icon1,
+.when,
+.project h2,
+.project a:hover {
+  background: -moz-linear-gradient(top, #ffde85 0%, #ffbb00 100%);
+  background: -webkit-linear-gradient(top, #ffde85 0%, #ffbb00 100%);
+  background: linear-gradient(to bottom, #ffde85 0%, #ffbb00 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skills {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.skills li {
+  flex-direction: column;
+  align-items: center;
+  padding: 6.5vh;
+}
+
+.skillscon {
+  margin-top: 50px;
+}
+
+.devicon {
+  font-size: 3.5em;
+  margin: auto;
+}
+
+.devicon,
+.icon {
+  margin-bottom: 20px;
+}
+
+.socialmedia {
+  justify-content: center;
+}
+
+.socialmedia a {
+  margin: 30px 20px 0px 0px;
+}
+
+.smicon {
+  color: #9c9c9c;
+  cursor: pointer;
+}
+
+.linkedin:hover {
+  color: #0a66c2;
+}
+
+.github:hover {
+  color: #a41cfe;
+}
+
+.download:hover {
+  color: greenyellow;
+}
+
+.image {
+  width: 50%;
+  height: auto;
+  background-color: #2a2a2b;
+  border-radius: 25px;
+  padding: 15px;
+  margin: 25px auto;
+}
+
+.innersubcon {
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.nametitlecon {
+  text-align: center;
+}
+
+.dropdown,
+.dropdownicon {
+  display: none;
+}
+
+/*---------------------------------------PortFolio----------------------------------------*/
+.project {
+  padding: 30px 30px 40px 30px;
+  margin: 25px 10px 25px 0;
+  border-radius: 25px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  display: flex;
+}
+.project h2,
+.project p,
+.stack {
+  margin: 0px 15px 15px 15px;
+}
+.stack {
+  margin-bottom: 40px;
+}
+.project p {
+  font-size: 0.9em;
+}
+.project div a {
+  background-color: #2a2a2b;
+  padding: 15px;
+  border-radius: 15px;
+  margin: 0 0 0 15px;
+}
+
+#nextjob {
+  width: 40%;
+  margin: auto 0;
+}
+
+.maincontainer2 {
+  width: 65%;
+  height: 60%;
+}
+/*---------------------------------------Resume----------------------------------------*/
+
+.maincontainer1 {
+  width: 50%;
+  height: 60%;
+}
+
+.list {
+  padding-left: 0;
+  margin-left: 2.5em;
+}
+.list li {
+  position: relative;
+  margin-bottom: 0;
+  padding-bottom: 2.5em;
+  list-style: none;
+  padding-left: 25px;
+}
+
+.list li::after {
+  /* bullet */
+  content: "·";
+  position: absolute;
+  font-size: 5.5em;
+  color: #ffbb00;
+  text-shadow: 0px 0px 15px hsl(40, 100%, 80%);
+  left: -24.5px;
+  top: 0;
+  line-height: 23px;
+  vertical-align: middle;
+}
+.list li:before {
+  /* lines */
+  content: "";
+  position: absolute;
+  left: -16px; /* adjust manually */
+  border-left: 2px solid #3f3f3f;
+  height: 100%;
+  width: 1px;
+}
+
+.list li:first-child:before {
+  /* first li's line */
+  top: 6px; /* moves the line down so that it disappears under the bullet. Adjust manually */
+}
+
+.list li:last-child:before {
+  /* last li's line */
+  height: 6px; /* shorten the line so it goes only up to the bullet. Is equal to first-child:before's top */
+}
+
+.contenttitle i {
+  border: 1px solid transparent;
+  padding: 0.5em;
+  border-radius: 6px;
+  background-image: linear-gradient(#1e1e1f, #1e1e1f),
+    linear-gradient(to bottom right, #3f3f3f, #202021, #202021);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.resumeicon {
+  margin-right: 1em;
+  color: #ffbb00;
+}
+
+/*---------------------------------------Media Query------------------------------------*/
+
+@media only screen and (max-width: 1200px) {
+  .bigcontainer {
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px;
+  }
+  .subcon {
+    position: relative;
+    width: auto;
+    margin: 0;
+  }
+
+  .innersubcon1 {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    margin: 25px 0;
+  }
+  .dropdown {
+    display: block;
+    position: absolute;
+    right: 0;
+    padding: 0.5rem 1.5rem;
+    border: solid 1px transparent;
+    background-image: linear-gradient(
+        rgba(255, 0, 0, 0),
+        rgba(255, 255, 255, 0)
+      ),
+      linear-gradient(
+        160deg,
+        #383838,
+        #383838,
+        #383838,
+        #1e1e1f,
+        #1e1e1f,
+        #1e1e1f
+      );
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px #232324 inset; /*backgroundcolor*/
+    border-radius: 0 20px 0 20px;
+  }
+  .dropdown span {
+    color: #ffcd29;
+    font-size: 0.8em;
+  }
+
+  .dropdown:active {
+    border-style: outset;
+  }
+
+  .subcondetails {
+    display: none;
+    align-items: start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    width: auto;
+    animation: growDown 500ms ease-in-out forwards;
+    transform-origin: top center;
+    margin-bottom: 30px;
+  }
+
+  @keyframes growDown {
+    0% {
+      transform: scaleY(0);
+    }
+    80% {
+      transform: scaleY(1.1);
+    }
+    100% {
+      transform: scaleY(1);
+    }
+  }
+
+  .greyline {
+    display: none;
+  }
+
+  .detailcon {
+    width: 350px;
+    overflow: unset;
+    font-size: 1.3em;
+  }
+
+  .socialmedia {
+    margin: 25px 25px 0 70px;
+    font-size: 1.5em;
+  }
+
+  .image {
+    display: block;
+    width: 9rem;
+    margin: 0;
+    height: auto;
+    background-color: #2a2a2b;
+    border-radius: 25px;
+    margin-left: 20px;
+  }
+
+  .nametitlecon {
+    margin: auto auto auto 25px;
+    text-align: start;
+  }
+  .name {
+    font-size: 2em;
+  }
+
+  .jobtitle {
+    width: 10em;
+    margin: 0;
+    font-size: 1em;
+  }
+
+  .maincontainer,
+  .maincontainer1,.maincontainer2{
+    margin: 0;
+    margin-top: 20px;
+    width: auto;
+  }
+
+  .skills li {
+    padding: 7vh;
+  }
+
+  .dropdown i {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .navbarcontainer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    backdrop-filter: blur(5px);
+    background: rgba(42, 42, 43, 0.7);
+    z-index: 1;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .bigcontainer {
+    margin: 15px;
+  }
+
+  .subcondetails {
+    width: auto;
+  }
+
+  .image {
+    width: 6.5rem;
+    height: 7.5rem;
+    margin-right: 0;
+  }
+
+  .innersubcon1 {
+    margin: 40px 0px;
+  }
+
+  .name {
+    font-size: 1.35em;
+  }
+
+  .jobtitle {
+    font-size: 0.9em;
+  }
+
+  .detailcon,
+  .icon1 {
+    margin-right: 30px;
+  }
+
+  .dropdown {
+    padding: 15px 20px;
+  }
+
+  .dropdown span {
+    display: none;
+  }
+  .dropdown i {
+    display: block;
+  }
+
+  .navbar li {
+    font-size: 1.05em;
+  }
+
+  .dropdownicon {
+    display: block;
+  }
+  .skills li {
+    padding: 4vh;
+  }
+  .smicon {
+    font-size: 1.3em;
+  }
+  .fa-laptop-code {
+    display: none;
+  }
+  .socialmedia {
+    margin: 10px 100px 10px 80px;
+  }
+  .orangeline1 {
+    display: block;
+  }
+  #nextjob{
+    display: none;
+  }
+  .project div a {
+    padding: 10px;
+    font-size: 0.80em;
+  }
+
+  /*Resume*/
+}
