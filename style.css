@@ -144,7 +144,6 @@ a {
 }
 .maincontainer {
   width: 60%;
-  height: 60%;
 }
 
 .orangeline,
@@ -171,7 +170,7 @@ a {
   background-color: #1e1e1f;
   border-radius: 25px;
   border: 1px solid #383838;
-  margin: 100px 0 250px 25px;
+  margin: 100px 0 50px 25px;
 }
 
 .subcon {
