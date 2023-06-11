@@ -159,14 +159,16 @@ a {
   display: none;
 }
 
-.innermaincontainer {
+.innermaincontainer,
+.innermaincontainer4 {
   margin: 25px 25px 50px 25px;
 }
 
 .subcon,
 .maincontainer,
 .maincontainer1,
-.maincontainer2 {
+.maincontainer2,
+.maincontainer4 {
   background-color: #1e1e1f;
   border-radius: 25px;
   border: 1px solid #383838;
@@ -259,7 +261,9 @@ a {
 .icon1,
 .when,
 .project h2,
-.project a:hover {
+.project a:hover,
+.getintouch,
+#emailButton:hover {
   background: -moz-linear-gradient(top, #ffde85 0%, #ffbb00 100%);
   background: -webkit-linear-gradient(top, #ffde85 0%, #ffbb00 100%);
   background: linear-gradient(to bottom, #ffde85 0%, #ffbb00 100%);
@@ -446,6 +450,30 @@ a {
   color: #ffbb00;
 }
 
+/* -------------------------------------Contact Me----------------------------------------------------------- */
+.maincontainer4 {
+  width: 50%;
+}
+.innermaincontainer4 {
+  text-align: center;
+}
+.innermaincontainer4 p {
+  margin: 0.5rem 2rem 4rem 2rem;
+  line-height: 2rem;
+}
+.innermaincontainer4 .maintitle {
+  text-align: initial;
+}
+.getintouch{
+  margin-top: 6rem;
+}
+#emailButton {
+  background-color: #2a2a2b;
+  padding: 20px;
+  border-radius: 15px;
+  margin: 0 auto;
+}
+
 /*---------------------------------------Media Query------------------------------------*/
 
 @media only screen and (max-width: 1200px) {
@@ -563,12 +591,16 @@ a {
   }
 
   .maincontainer,
-  .maincontainer1,.maincontainer2{
+  .maincontainer1,
+  .maincontainer2,
+  .maincontainer4  {
     margin: 0;
     margin-top: 20px;
     width: auto;
   }
-
+  .maincontainer4{
+    margin-bottom: 10%;
+  }
   .skills li {
     padding: 7vh;
   }
@@ -656,12 +688,15 @@ a {
   .orangeline1 {
     display: block;
   }
-  #nextjob{
+  #nextjob {
     display: none;
   }
   .project div a {
     padding: 10px;
-    font-size: 0.80em;
+    font-size: 0.8em;
+  }
+  .maincontainer4{
+    margin-bottom: 15%;
   }
 
   /*Resume*/
