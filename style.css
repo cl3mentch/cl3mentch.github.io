@@ -453,6 +453,7 @@ a {
 /* -------------------------------------Contact Me----------------------------------------------------------- */
 .maincontainer4 {
   width: 50%;
+  height: 30rem;
 }
 .innermaincontainer4 {
   text-align: center;
@@ -599,7 +600,7 @@ a {
     width: auto;
   }
   .maincontainer4{
-    margin-bottom: 10%;
+    margin-bottom: 5%;
   }
   .skills li {
     padding: 7vh;
@@ -620,6 +621,9 @@ a {
     backdrop-filter: blur(5px);
     background: rgba(42, 42, 43, 0.7);
     z-index: 1;
+  }
+  .maincontainer4{
+    margin-bottom: 15%;
   }
 }
 
