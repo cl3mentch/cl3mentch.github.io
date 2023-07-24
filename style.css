@@ -201,8 +201,13 @@ a {
 }
 
 .content,
+li,
 .detail2 {
   color: #d0cdd0;
+}
+
+li {
+  font-size: 0.9em;
 }
 .name {
   font-weight: 500;
@@ -465,7 +470,7 @@ a {
 .innermaincontainer4 .maintitle {
   text-align: initial;
 }
-.getintouch{
+.getintouch {
   margin-top: 6rem;
 }
 #emailButton {
@@ -594,12 +599,12 @@ a {
   .maincontainer,
   .maincontainer1,
   .maincontainer2,
-  .maincontainer4  {
+  .maincontainer4 {
     margin: 0;
     margin-top: 20px;
     width: auto;
   }
-  .maincontainer4{
+  .maincontainer4 {
     margin-bottom: 5%;
   }
   .skills li {
@@ -622,7 +627,7 @@ a {
     background: rgba(42, 42, 43, 0.7);
     z-index: 1;
   }
-  .maincontainer4{
+  .maincontainer4 {
     margin-bottom: 15%;
   }
 }
@@ -699,7 +704,7 @@ a {
     padding: 10px;
     font-size: 0.8em;
   }
-  .maincontainer4{
+  .maincontainer4 {
     margin-bottom: 15%;
   }
 
