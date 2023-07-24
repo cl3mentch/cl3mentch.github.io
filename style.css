@@ -201,14 +201,11 @@ a {
 }
 
 .content,
-li,
 .detail2 {
   color: #d0cdd0;
 }
 
-li {
-  font-size: 0.9em;
-}
+
 .name {
   font-weight: 500;
   font-size: 1.4em;
